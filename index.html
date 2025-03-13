@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 20px">
+    <pre>
+* Audit manager: là dịch vụ liên tục kiểm tra việc sử dụng tài nguyên cờ lau và tự động đánh giá rủi ro và tuân thủ. tự động thu thập bằng chứng kiểm toán để mở rộng khả năng kiểm toán đám mây. giúp đánh giá xem các chính sách quy trình và hoạt động có đang hoat động hiêu quả không.
+
+* Inspector: dịch vụ xác thực bảo mật và không tự động thu thập bằng chứng để kiểm tra. là dịch vụ đánh giá bảo mật úng dụng tự động. có thể giúp cải thiện bảo mật và khả năng tuân thủ của các ứng dụng được triển khai.
+
+* Trusted Advisor: công cụ giúp cải thiện việc sử dụng các dịch vụ cờ lao không tự động thu thập bằng chứng để kiểm tra. là một công cụ giúp giảm chi phí , cải thiện hiệu suất và tăng cường bảo mật. tài liệu này cung cấp hướng dẫn , bao gồm khuyến nghị để giúp cung cấp tài nguyên theo các thông lệ tốt nhất của cờ lao.
+
+* Guarduty: là dịch vụ phát hiện mối đe dọa liên tục theo dõi hành vi độc hại hoặc trái phép. sử dụng máy học để xác định hoạt động có vấn đề dựa trên VPCフローログ, AWS CloudTrail イベントログ và DNS ログ
+
+
+* CAF6つのパースペクティブ: 
+- ビジネス
+- 人材
+- ガバナンス
+- プラットフォーム
+- セキュリティ
+- オペレーション
+
+* AWS Well-Architected はAWS上で高い安全性、性能、障害耐性、効率性を備えたインフラストラクチャを構築する際の設計原則です。AWS Well-Architected は５つの柱でしたが、2021年にサステイナビリティが加わりました。
+■運用上の優秀性
+
+■セキュリティ
+
+■信頼性
+
+■パフォーマンス効率
+
+■コストの最適化
+
+■サステイナビリティ（2021年より追加）
+
+* AWS WAF はWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません
+
+* Amazon Detective: Amazon Detectiveにより、AWS上にホストされたアプリケーションに対する脅威検出を自動化することができます。Amazon DetectiveはCloudTrail、VPC Flow Logs、GuardDutyのログや結果を自動的に収集し、潜在的なセキュリティの問題を調査・分析することができます
+
+* Resource Groups: là dịch vụ quản lý để quản lý tài nguyên và tự động hóa các tác vụ. Bằng cách nhóm các nguồn lực cho từng giai đoạn hoặc lĩnh vực, có thể quản lý trong bảng điều khiển tùy chỉnh cho từng giai đoạn, dự án v.v
+
+* S3 Transfer Acceleration: là dịch vụ tận dụng các vị trí biên(エッジロケーション) phân bổ toàn cầu của Amazon CloudFront để cho phép truyền tệp đến s3 thông qua các vị trí biên(edge location) gần với người dùng. S3 Transfer Acceleration giúp truyền tệp qua khoảng cách xa giữa máy khách và s3 bucket một cách nhanh chóng, dễ dàng và an toàn bằng cách sử dụng mạng lưới toàn cầu của aws, khi dữ liệu đến edge location ,nó được định tuyến qua đường dẫn mạng được tối ưu hóa đến S3.
+
+* AWS Cloud Development Kit (CDK): đẩy nhanh quá trình phát triển đám mây bằng cách mô hình hóa các ứng dụng bằng ngôn ngữ lập trình. phát triên ứng dụng hiệu quả hơn bằng cách sử dụng cdk làm khuôn khổ chính để xác định cơ sở hạ tầng đám mây dưới dạng mã. các ngôn ngữ được hỗ trợ bao gồm : 
+TypeScript , JavaScript , Python , Java , C# , Go
+
+* AWS X-Ray : sử dụng X-Ray để phân tích và gỡ lỗi các ứng dụng micro service, ví dụ như các ứng dụng được xây dựng bằng kiến trúc vi dịch vụ. X-ray giúp hiểu hiệu suất của ứng dụng và tài nguyên cơ bản như EC2, cho phép xác định và khắc phục nguyên nhân gốc rễ của các sự cố và lỗi về hiệu suất . cung cấp chế độ xem toàn điện về các yêu cầu khi đi qua ứng dụng.
+
+* System Manager: dịch vụ cung cấp khả năng hiển thị và kiểm soát cơ sơ hạ tầng aws của mình.
+
+* cost categories: phân loại chính xác thông tin chi phí và sử dụng theo nhóm, trung tâm chi phí, địa lý, ứng dụng hoặc cơ cấu tổ chức khác và nhu cầu phân bố chi phí
+
+* コスト配分タグ: 
+
+* Migration Hub: là dịch vụ quản lý di chuyển cho phép nắm được trạng thái di chuyển quy mô lớn sang aws theo thời gian thực. Bằng cách sử dụng migration hub, có thể quản lý tập trung trạng thái thực thi của các công cụ liên quan đến di chuyển do aws cung cấp. Do đó bằng cách sử dụng migration hub , có thể đánh giá và phân tích tình hình trong quá trình di chuyển aws.
+
+* migration evaluator: là dịch vụ hỗ trợ di chuyển để tạo ra cơ sở kinh doanh dựa trên dữ liệu cho việc lập kế hoạch và di chuyển aws cloud. đây là công cụ giúp phát triển chiến lược di chuyển và ước tính chi phí.
+
+* prescriptive guidance: là trang web hướng dẫn cung cấp các chiến luocj, hướng dẫn và mô hình đã được chứng minh để giúp đẩy nhanh các dự án di chuyển, hiện đại hóa và tối ưu hóa lên đám mây. Tài liệu cung cấp góc nhìn kinh doan, phương pháp luận và khuôn khổ cho quá trình di chuyển và hiện đại hóa đám mây, cũng như các thông lệ tốt nhất và hướng dẫn lập kế hoạch chiến lược dựa trên công cụ cho các kiến trúc sư, nhà quản lý và lãnh đạo kỹ thuật.
+
+    </pre>
+</body>
+</html>
