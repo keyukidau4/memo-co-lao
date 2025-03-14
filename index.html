@@ -5,63 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="padding: 20px">
-    <pre>
-* Audit manager: là dịch vụ liên tục kiểm tra việc sử dụng tài nguyên cờ lau và tự động đánh giá rủi ro và tuân thủ. tự động thu thập bằng chứng kiểm toán để mở rộng khả năng kiểm toán đám mây. giúp đánh giá xem các chính sách quy trình và hoạt động có đang hoat động hiêu quả không.
+<body >
+    <div style="padding: 20px; word-wrap: break-word;">
+        <p>
+            * Audit manager: là dịch vụ liên tục kiểm tra việc sử dụng tài nguyên cờ lau và tự động đánh giá rủi ro và tuân thủ. tự động thu thập bằng chứng kiểm toán để mở rộng khả năng kiểm toán đám mây. giúp đánh giá xem các chính sách quy trình và hoạt động có đang hoat động hiêu quả không. <br>
+            
+            * Inspector: dịch vụ xác thực bảo mật và không tự động thu thập bằng chứng để kiểm tra. là dịch vụ đánh giá bảo mật úng dụng tự động. có thể giúp cải thiện bảo mật và khả năng tuân thủ của các ứng dụng được triển khai.<br>
+            
+            * Trusted Advisor: công cụ giúp cải thiện việc sử dụng các dịch vụ cờ lao không tự động thu thập bằng chứng để kiểm tra. là một công cụ giúp giảm chi phí , cải thiện hiệu suất và tăng cường bảo mật. tài liệu này cung cấp hướng dẫn , bao gồm khuyến nghị để giúp cung cấp tài nguyên theo các thông lệ tốt nhất của cờ lao.<br>
+            
+            * Guarduty: là dịch vụ phát hiện mối đe dọa liên tục theo dõi hành vi độc hại hoặc trái phép. sử dụng máy học để xác định hoạt động có vấn đề dựa trên VPCフローログ, AWS CloudTrail イベントログ và DNS ログ<br>
+            
+            
+            * CAF6つのパースペクティブ: <br>
+            - ビジネス<br>
+            - 人材<br>
+            - ガバナンス<br>
+            - プラットフォーム<br>
+            - セキュリティ<br>
+            - オペレーション<br>
+            
+            * AWS Well-Architected はAWS上で高い安全性、性能、障害耐性、効率性を備えたインフラストラクチャを構築する際の設計原則です。AWS Well-Architected は５つの柱でしたが、2021年にサステイナビリティが加わりました。<br>
+            ■運用上の優秀性<br>
+            
+            ■セキュリティ<br>
+            
+            ■信頼性<br>
+            
+            ■パフォーマンス効率<br>
+            
+            ■コストの最適化<br>
+            
+            ■サステイナビリティ（2021年より追加）<br>
+            
+            * AWS WAF はWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません<br>
+            
+            * Amazon Detective: Amazon Detectiveにより、AWS上にホストされたアプリケーションに対する脅威検出を自動化することができます。Amazon DetectiveはCloudTrail、VPC Flow Logs、GuardDutyのログや結果を自動的に収集し、潜在的なセキュリティの問題を調査・分析することができます<br>
+            
+            * Resource Groups: là dịch vụ quản lý để quản lý tài nguyên và tự động hóa các tác vụ. Bằng cách nhóm các nguồn lực cho từng giai đoạn hoặc lĩnh vực, có thể quản lý trong bảng điều khiển tùy chỉnh cho từng giai đoạn, dự án v.v<br>
+            
+            * S3 Transfer Acceleration: là dịch vụ tận dụng các vị trí biên(エッジロケーション) phân bổ toàn cầu của Amazon CloudFront để cho phép truyền tệp đến s3 thông qua các vị trí biên(edge location) gần với người dùng. S3 Transfer Acceleration giúp truyền tệp qua khoảng cách xa giữa máy khách và s3 bucket một cách nhanh chóng, dễ dàng và an toàn bằng cách sử dụng mạng lưới toàn cầu của aws, khi dữ liệu đến edge location ,nó được định tuyến qua đường dẫn mạng được tối ưu hóa đến S3.<br>
+            
+            * AWS Cloud Development Kit (CDK): đẩy nhanh quá trình phát triển đám mây bằng cách mô hình hóa các ứng dụng bằng ngôn ngữ lập trình. phát triên ứng dụng hiệu quả hơn bằng cách sử dụng cdk làm khuôn khổ chính để xác định cơ sở hạ tầng đám mây dưới dạng mã. các ngôn ngữ được hỗ trợ bao gồm : <br>
+            TypeScript , JavaScript , Python , Java , C# , Go<br>
+            
+            * AWS X-Ray : sử dụng X-Ray để phân tích và gỡ lỗi các ứng dụng micro service, ví dụ như các ứng dụng được xây dựng bằng kiến trúc vi dịch vụ. X-ray giúp hiểu hiệu suất của ứng dụng và tài nguyên cơ bản như EC2, cho phép xác định và khắc phục nguyên nhân gốc rễ của các sự cố và lỗi về hiệu suất . cung cấp chế độ xem toàn điện về các yêu cầu khi đi qua ứng dụng.<br>
+            
+            * System Manager: dịch vụ cung cấp khả năng hiển thị và kiểm soát cơ sơ hạ tầng aws của mình.<br>
+            
+            * cost categories: phân loại chính xác thông tin chi phí và sử dụng theo nhóm, trung tâm chi phí, địa lý, ứng dụng hoặc cơ cấu tổ chức khác và nhu cầu phân bố chi phí<br>
+            
+            * コスト配分タグ: <br>
+            
+            * Migration Hub: là dịch vụ quản lý di chuyển cho phép nắm được trạng thái di chuyển quy mô lớn sang aws theo thời gian thực. Bằng cách sử dụng migration hub, có thể quản lý tập trung trạng thái thực thi của các công cụ liên quan đến di chuyển do aws cung cấp. Do đó bằng cách sử dụng migration hub , có thể đánh giá và phân tích tình hình trong quá trình di chuyển aws.<br>
+            
+            * migration evaluator: là dịch vụ hỗ trợ di chuyển để tạo ra cơ sở kinh doanh dựa trên dữ liệu cho việc lập kế hoạch và di chuyển aws cloud. đây là công cụ giúp phát triển chiến lược di chuyển và ước tính chi phí.<br>
+            
+            * prescriptive guidance: là trang web hướng dẫn cung cấp các chiến luocj, hướng dẫn và mô hình đã được chứng minh để giúp đẩy nhanh các dự án di chuyển, hiện đại hóa và tối ưu hóa lên đám mây. Tài liệu cung cấp góc nhìn kinh doan, phương pháp luận và khuôn khổ cho quá trình di chuyển và hiện đại hóa đám mây, cũng như các thông lệ tốt nhất và hướng dẫn lập kế hoạch chiến lược dựa trên công cụ cho các kiến trúc sư, nhà quản lý và lãnh đạo kỹ thuật.<br>
+            
+            * EC2 Instance Connect : có thể kết nối phiên bản của mình bằng trình duyệt, bảng điều khiển EC2, EC2 Instance Connect CLI hoặc bất kỳ trình truyệt SSH. EC2 Instance COnnect cung cấp một cách đơn giản và an toàn để kết nối với các phiên bản Linux bằng Secure Shell(SSH). Sử dụng chính sách và nguyên tắc IAM để kiểm soát quyền truy cập SSH vào phiên bản. Không cần phải chia sẻ và quản lý khóa SSH giữa những người dùng<br>
 
-* Inspector: dịch vụ xác thực bảo mật và không tự động thu thập bằng chứng để kiểm tra. là dịch vụ đánh giá bảo mật úng dụng tự động. có thể giúp cải thiện bảo mật và khả năng tuân thủ của các ứng dụng được triển khai.
+            * quick start(クイックスタート) là cac triển khai tham chiếu tự động được xây dựng bởi các kiến trúc sư giải pháp AWS và đối tác aws, khởi động nhanh triên khai các công nghệ phổ biến trên cờ lao , tuân theo các thông lệ tốt nhất của cờ lao. giúp giảm hàng trăm bước thủ công xuống chỉ còn vài bước , do đó có thể thiết lập và vận hành cơ sở hạ tầng cùa mình trong vài phút<br>
+        
+            * trong aws thì trách nhiệm của người dùng:<br>
+            - ネットワークACLによりファイアーウォールを制御する。<br>
+            - EC2インスタンスにセキュリティグループを設定する。<br>
+            - Amazon EC2インスタンスのゲストOSにバッチを適用する。<br>
 
-* Trusted Advisor: công cụ giúp cải thiện việc sử dụng các dịch vụ cờ lao không tự động thu thập bằng chứng để kiểm tra. là một công cụ giúp giảm chi phí , cải thiện hiệu suất và tăng cường bảo mật. tài liệu này cung cấp hướng dẫn , bao gồm khuyến nghị để giúp cung cấp tài nguyên theo các thông lệ tốt nhất của cờ lao.
+            * trong aws thì trách nhiệm của aws: Chủ yếu chịu trách nhiệm quản lý tính bảo mật của cơ sở hạ tầng vật lý aws. chẳng hạn như trung tâm dữ liệu và máy chủ vật lý, cũng như các dịch vụ dựa trên đó. Hệ điều hành lưu trữ cho phiên bản ec2 là hệ điều hành bên trong máy chủ vậy lý.<br>
+            - AWSデータセンターへのアクセスを管理する。<br>
+            - Amazon EC2インスタンスのホストOSにバッチを適用する。<br>
+        
+            * kí hiêu khối CIDR(CIDRブロック表記): là phương pháp ký hiệu chỉ ra độ dài bit của phần mạng trong địa chỉ IP bằng /XX. Ví dụ 192.168.10.0/24 có nghĩa là 24 bit là phần mạng và 8 bit còn lại là phần máy chủ. các nhóm bảo mật và ACL mạng(セキュリティグループとネットワークACL) sử dụng ký hiệu khối CIDR này để cấu hình tường lửa. <br>
 
-* Guarduty: là dịch vụ phát hiện mối đe dọa liên tục theo dõi hành vi độc hại hoặc trái phép. sử dụng máy học để xác định hoạt động có vấn đề dựa trên VPCフローログ, AWS CloudTrail イベントログ và DNS ログ
+            * Nhóm bảo mật(セキュリティグループ): kiểm soát lưu lượng truyền thống tới các phiên bản như EC2 và phiên bản DB. có thể chỉ định các giao thức như HTTP và SSH để cho phép giao tiếp. Khi khởi chạy môt phiên bản trong VPC , có thể cấu hình tối đa năm nhóm bảo mật cho một phiên bản trong cùng một lúc.<br>
 
+            * ACL mạng (ネットワークACL):là tường lửa kiểm soát lưu lượng truy cập vào và ra cho mạng con VPC. Bằng cách thiết lập trên một mạng con. có thể kiếm soát lưu lượng trên toàn bộ mạng con nơi đặt cac phiên bản EC2. Tuy nhiên, điều này kiếm soát lưu lượng trên toàn bộ mạng con thay vì đến từng phiên bản EC2 riêng lẻ. do đó để kiếm soát lưu lượng đến từng phiên bản EC2 riêng lẻ thì sử dụng nhóm bảo mật(セキュリティグループ)<br>
+                    
+            * sử dụng aws security fub và amazon detective làm công cụ để tổng hợp , phân tích và báo cáo dữ liệu từ amazon guardDuty.<br>
 
-* CAF6つのパースペクティブ: 
-- ビジネス
-- 人材
-- ガバナンス
-- プラットフォーム
-- セキュリティ
-- オペレーション
+            * Security hub là dịch vụ cung cấp cái nhìn toàn diện về các cảnh báo bảo mật ưu tiên cao và trạng thái tuân thủ của mọi tài khoản aws. có thể xem cảnh báo bảo mật và kết quả phát hiện từ các dịch vụ liên quan đến bảo mật của aws như guardDury, Inspector và Macie. Cũng như các dịch vụ bảo mật của bên thứ 3, tất cả mọi nơi <br>
+        
+            * Amazon Quicksight: tính năng Q trong amazon quicksight cho phép kết hợp khả năng đặt câu hỏi bằng ngôn ngữ tự nhiên vào bảng thông tin công cụ kinh doanh thông minh của mình. Q là công cụ truy vấn ngôn ngữ tự nhiên dành cho phiên bản enterprise của quicksight. học máy giúp dữ liệu hiện tại dễ truy cập và có giá trị hơn, Dùng để tạo dashboard BI và visualize dữ liệu.<br>
 
-* AWS Well-Architected はAWS上で高い安全性、性能、障害耐性、効率性を備えたインフラストラクチャを構築する際の設計原則です。AWS Well-Architected は５つの柱でしたが、2021年にサステイナビリティが加わりました。
-■運用上の優秀性
+            * Amazon Rekognition: giúp dễ dàng thêm tính năng phân tích hình ảnh và video vào ứng dụng. Chỉ cần cung cấp hình ảnh hoặc video cho API Rekognition và dịch vụ này sẽ phát hiện các vật thể, người , văn bản,cảnh, hoạt động và thậm chí cả nội dung không phù hợp.<br>
+            
+            * Amazon Lex: dịch vụ sử dụng giọng nói và văn bản để xây dựng giao diện đàm thoại vào bất kỳ ứng dụng nào.<br>
+            
+            * Amazon Comprehend: là dịch vụ xử lý ngôn ngữ tự nhiên được quản lý hoàn toàn. Có thể xác định địa điểm, con người, cum từ chính, cảm xúc và nhiều thông tin khác trong văn bản. nếu như muốn chức năng tìm kiếm amazon kendra là lựa chọn tốt hơn<br>
+        
+            * AWS Artifact cung cấp nguồn tài nguyên tập trung cho thông tin quan trọng liên quan đến tuân thủ. cung cấp quyền truy cập theo yêu cầu vào các báo cáo bảo mật và tuân thủ của aws cùng một số thỏa thuận trực tuyến nhất định. artifact cung cấp quyền truy cập theo yêu cầu vào các báo cáo, chứng chỉ, giáy chứng nhậ và các chứng chỉ của bên thứ 3 khác do các kiểm toán viên AWS tạo ra. do đó có thể sử dụng tính năng này để nhận báo cáo kiểm tra về môi trường aws của mình<br>
 
-■セキュリティ
+            * Aws Lauch Wizard: là dịch vụ được sử dụng để triển khai các ứng dụng một cách dễ dàng theo các thông lệ tốt nhất của aws dựa trên các mẫu aws cloudformation.<br>
 
-■信頼性
+            * amazon workspaces web: là một tính năng của amazon workspaces cung cấp các phiên theo yêu cầu để kết nối với workspace thông qua trình duyệt. cho phép cung cấp cho nhân viên quyền truy cập an toàn vào các trang web nội bộ và ứng dụng web Saas.<br>
+            
+            * amazon workspaces: là dịch vụ ảo hóa máy tính để bàn được quản lý hoàn toàn dành cho windows và linux. có thể truy cập theo yêu cầu từ mọi thiết bị.<br>
 
-■パフォーマンス効率
-
-■コストの最適化
-
-■サステイナビリティ（2021年より追加）
-
-* AWS WAF はWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません
-
-* Amazon Detective: Amazon Detectiveにより、AWS上にホストされたアプリケーションに対する脅威検出を自動化することができます。Amazon DetectiveはCloudTrail、VPC Flow Logs、GuardDutyのログや結果を自動的に収集し、潜在的なセキュリティの問題を調査・分析することができます
-
-* Resource Groups: là dịch vụ quản lý để quản lý tài nguyên và tự động hóa các tác vụ. Bằng cách nhóm các nguồn lực cho từng giai đoạn hoặc lĩnh vực, có thể quản lý trong bảng điều khiển tùy chỉnh cho từng giai đoạn, dự án v.v
-
-* S3 Transfer Acceleration: là dịch vụ tận dụng các vị trí biên(エッジロケーション) phân bổ toàn cầu của Amazon CloudFront để cho phép truyền tệp đến s3 thông qua các vị trí biên(edge location) gần với người dùng. S3 Transfer Acceleration giúp truyền tệp qua khoảng cách xa giữa máy khách và s3 bucket một cách nhanh chóng, dễ dàng và an toàn bằng cách sử dụng mạng lưới toàn cầu của aws, khi dữ liệu đến edge location ,nó được định tuyến qua đường dẫn mạng được tối ưu hóa đến S3.
-
-* AWS Cloud Development Kit (CDK): đẩy nhanh quá trình phát triển đám mây bằng cách mô hình hóa các ứng dụng bằng ngôn ngữ lập trình. phát triên ứng dụng hiệu quả hơn bằng cách sử dụng cdk làm khuôn khổ chính để xác định cơ sở hạ tầng đám mây dưới dạng mã. các ngôn ngữ được hỗ trợ bao gồm : 
-TypeScript , JavaScript , Python , Java , C# , Go
-
-* AWS X-Ray : sử dụng X-Ray để phân tích và gỡ lỗi các ứng dụng micro service, ví dụ như các ứng dụng được xây dựng bằng kiến trúc vi dịch vụ. X-ray giúp hiểu hiệu suất của ứng dụng và tài nguyên cơ bản như EC2, cho phép xác định và khắc phục nguyên nhân gốc rễ của các sự cố và lỗi về hiệu suất . cung cấp chế độ xem toàn điện về các yêu cầu khi đi qua ứng dụng.
-
-* System Manager: dịch vụ cung cấp khả năng hiển thị và kiểm soát cơ sơ hạ tầng aws của mình.
-
-* cost categories: phân loại chính xác thông tin chi phí và sử dụng theo nhóm, trung tâm chi phí, địa lý, ứng dụng hoặc cơ cấu tổ chức khác và nhu cầu phân bố chi phí
-
-* コスト配分タグ: 
-
-* Migration Hub: là dịch vụ quản lý di chuyển cho phép nắm được trạng thái di chuyển quy mô lớn sang aws theo thời gian thực. Bằng cách sử dụng migration hub, có thể quản lý tập trung trạng thái thực thi của các công cụ liên quan đến di chuyển do aws cung cấp. Do đó bằng cách sử dụng migration hub , có thể đánh giá và phân tích tình hình trong quá trình di chuyển aws.
-
-* migration evaluator: là dịch vụ hỗ trợ di chuyển để tạo ra cơ sở kinh doanh dựa trên dữ liệu cho việc lập kế hoạch và di chuyển aws cloud. đây là công cụ giúp phát triển chiến lược di chuyển và ước tính chi phí.
-
-* prescriptive guidance: là trang web hướng dẫn cung cấp các chiến luocj, hướng dẫn và mô hình đã được chứng minh để giúp đẩy nhanh các dự án di chuyển, hiện đại hóa và tối ưu hóa lên đám mây. Tài liệu cung cấp góc nhìn kinh doan, phương pháp luận và khuôn khổ cho quá trình di chuyển và hiện đại hóa đám mây, cũng như các thông lệ tốt nhất và hướng dẫn lập kế hoạch chiến lược dựa trên công cụ cho các kiến trúc sư, nhà quản lý và lãnh đạo kỹ thuật.
-
-    </pre>
+            * AWS CAF のビジネスのパースペクティブの機能: <br>
+            　1. 戦略管理<br>
+            　2. ポートフォリオ管理<br>
+            　3. イノベーション管理<br>
+            　4. 製品管理<br>
+            　5. 戦略的パートナーシップ<br>
+            　6. データの収益化<br>
+            　7. ビジネスインサイト<br>
+            　8. データサイエンス<br>
+        </p>
+    </div>
+    
 </body>
 </html>
