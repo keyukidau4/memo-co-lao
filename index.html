@@ -12,10 +12,9 @@
             
             * Inspector: dịch vụ xác thực bảo mật và không tự động thu thập bằng chứng để kiểm tra. là dịch vụ đánh giá bảo mật úng dụng tự động. có thể giúp cải thiện bảo mật và khả năng tuân thủ của các ứng dụng được triển khai.<br>
             
-            * Trusted Advisor: công cụ giúp cải thiện việc sử dụng các dịch vụ cờ lao không tự động thu thập bằng chứng để kiểm tra. là một công cụ giúp giảm chi phí , cải thiện hiệu suất và tăng cường bảo mật. tài liệu này cung cấp hướng dẫn , bao gồm khuyến nghị để giúp cung cấp tài nguyên theo các thông lệ tốt nhất của cờ lao.<br>
+            * Trusted Advisor: công cụ giúp cải thiện việc sử dụng các dịch vụ cờ lao không tự động thu thập bằng chứng để kiểm tra. là một công cụ giúp giảm chi phí , cải thiện hiệu suất và tăng cường bảo mật. tài liệu này cung cấp hướng dẫn , bao gồm khuyến nghị để giúp cung cấp tài nguyên theo các thông lệ tốt nhất của cờ lao. có thể thực hiện việc tối ưu bảo mật lên các dịch vụ ví dụ như s3<br>
             
             * Guarduty: là dịch vụ phát hiện mối đe dọa liên tục theo dõi hành vi độc hại hoặc trái phép. sử dụng máy học để xác định hoạt động có vấn đề dựa trên VPCフローログ, AWS CloudTrail イベントログ và DNS ログ<br>
-            
             
             * CAF6つのパースペクティブ: <br>
             - ビジネス<br>
@@ -38,7 +37,7 @@
             
             ■サステイナビリティ（2021年より追加）<br>
             
-            * AWS WAF はWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません<br>
+            * AWS WAF はWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません。Bằng cách liên kết với CloudFront, bạn có thể hạn chế quyền truy cập vào ứng dụng web của mình từ các địa chỉ IP cụ thể.<br>
             
             * Amazon Detective: Amazon Detectiveにより、AWS上にホストされたアプリケーションに対する脅威検出を自動化することができます。Amazon DetectiveはCloudTrail、VPC Flow Logs、GuardDutyのログや結果を自動的に収集し、潜在的なセキュリティの問題を調査・分析することができます<br>
             
@@ -82,7 +81,7 @@
 
             * ACL mạng (ネットワークACL):là tường lửa kiểm soát lưu lượng truy cập vào và ra cho mạng con VPC. Bằng cách thiết lập trên một mạng con. có thể kiếm soát lưu lượng trên toàn bộ mạng con nơi đặt cac phiên bản EC2. Tuy nhiên, điều này kiếm soát lưu lượng trên toàn bộ mạng con thay vì đến từng phiên bản EC2 riêng lẻ. do đó để kiếm soát lưu lượng đến từng phiên bản EC2 riêng lẻ thì sử dụng nhóm bảo mật(セキュリティグループ)<br>
                     
-            * sử dụng aws security fub và amazon detective làm công cụ để tổng hợp , phân tích và báo cáo dữ liệu từ amazon guardDuty.<br>
+            * sử dụng aws security hub và amazon detective làm công cụ để tổng hợp , phân tích và báo cáo dữ liệu từ amazon guardDuty.<br>
 
             * Security hub là dịch vụ cung cấp cái nhìn toàn diện về các cảnh báo bảo mật ưu tiên cao và trạng thái tuân thủ của mọi tài khoản aws. có thể xem cảnh báo bảo mật và kết quả phát hiện từ các dịch vụ liên quan đến bảo mật của aws như guardDury, Inspector và Macie. Cũng như các dịch vụ bảo mật của bên thứ 3, tất cả mọi nơi <br>
         
@@ -94,7 +93,7 @@
             
             * Amazon Comprehend: là dịch vụ xử lý ngôn ngữ tự nhiên được quản lý hoàn toàn. Có thể xác định địa điểm, con người, cum từ chính, cảm xúc và nhiều thông tin khác trong văn bản. nếu như muốn chức năng tìm kiếm amazon kendra là lựa chọn tốt hơn<br>
         
-            * AWS Artifact cung cấp nguồn tài nguyên tập trung cho thông tin quan trọng liên quan đến tuân thủ. cung cấp quyền truy cập theo yêu cầu vào các báo cáo bảo mật và tuân thủ của aws cùng một số thỏa thuận trực tuyến nhất định. artifact cung cấp quyền truy cập theo yêu cầu vào các báo cáo, chứng chỉ, giáy chứng nhậ và các chứng chỉ của bên thứ 3 khác do các kiểm toán viên AWS tạo ra. do đó có thể sử dụng tính năng này để nhận báo cáo kiểm tra về môi trường aws của mình<br>
+            * AWS Artifact cung cấp nguồn tài nguyên tập trung cho thông tin quan trọng liên quan đến tuân thủ. cung cấp quyền truy cập theo yêu cầu vào các báo cáo bảo mật và tuân thủ của aws cùng một số thỏa thuận trực tuyến nhất định. artifact cung cấp quyền truy cập theo yêu cầu vào các báo cáo, chứng chỉ, giáy chứng nhận và các chứng chỉ của bên thứ 3 khác do các kiểm toán viên AWS tạo ra. do đó có thể sử dụng tính năng này để nhận báo cáo kiểm tra về môi trường aws của mình<br>
 
             * Aws Lauch Wizard: là dịch vụ được sử dụng để triển khai các ứng dụng một cách dễ dàng theo các thông lệ tốt nhất của aws dựa trên các mẫu aws cloudformation.<br>
 
@@ -111,6 +110,65 @@
             　6. データの収益化<br>
             　7. ビジネスインサイト<br>
             　8. データサイエンス<br>
+
+            * CloudTrail Insights: có thể tự động phân tich các sự kiện quản lý từ CloudTrail để thiết lập cơ sở cho hành vi bình thường, sa đó tạo các sự kiện Insights để thông báo cho bạn khi phát hiện các kiểu hành vi bất thường. Tính năng này cho phép bạn phát hiện và báo động khi có hoạt động vược quá số lượng tài nguyên cơ bản(ベースラインとなるリソース). Khi được bật, cloudtrail insights se đo các mẫu bình thường trong khối lượng cuộc gọi API cơ sở và tạo sự kiện insights nếu khối lượng lệch khỏi mẫu bình thường.<br>
+
+            * CloudWaitch Logs Insights: là tính năng phân tích nhật ký được quản lý hoàn toàn, được thiết kế để hoạt động ở quy mô đám mây mà không cần thiết lập hoặc bảo trì. Hệ thống này xử lý khối lượng lớn nhật ký trong vài giây và cung cấp khả năng truy vấn và trực quan hóa tương tác. Tính năng cung cấp thông tin chi tiết về nhật ký và cho phép bạn phân tích nhật ký hoạt động do cloudtrail gửi nhưng không cho phép chạy cảnh báo theo dữ liệu cơ sở<br>
+
+            * CloudWatch alarm: là tính năng cho phép bạn đặt ngưỡng cho só liệu tài nguyên AWS và cấu hình thông báo cảnh báo. Đặt cảnh báo về các số liệu như mức sử dụng CPU của các phiên bản EC2. do đó bạn không thể cài đặt thông báo cảnh báo cho các hoạt động cụ thể<br>
+
+            * Aws virtual Private Network(AWS VPN):  có thể sử dụng tính năng VPN site-to-site(サイト間VPN) của AWS virtual private network(aws vpn) để cáu hình kết nối truyền thông được mã hóa giữa mạng văn phòng và mạng aws. aws vpn là dịch vụ thiết lập kết nối an toàn, được mã hóa giữa mạng tại chỗ và mạng aws.<br>
+
+            * AWS private link: là tính năng cho phép kết nối an toàn các ứng dụng của mình với các dịch vụ aws. đây là phương pháp kết nối aws nội bộ sử dụng cơ sở hạ tầng xương sống của aws.<br>
+
+            * transit gateway: là tính năng kết nối liên VPC giúp kết nối nhiều vpc và mạng tại chỗ thông qua một trung tâm. giải pháp này có thể kết nối với mạng tại chỗ nhưng phải thiết lập kết nối trước thông qua aws vpn hoặc direct connect.<br>
+
+            * direct connect: là dịch vụ kết nối đường truyền chuyên dụng giúp kết nối VPC và môi trường tại chỗ. aws direct connect có tính năng cáu hình vpn để dự phòng, nhưng đây là tính năng dự phòng nên không thể sử dụng để thiết lập liên lạc mã hóa giữa mạng văn phòng và aws.<br>
+        
+            * ライセンスをAWS環境に引き継ぐ: Dedicated Hostsを利用する, ベアメタルインスタンスを利用する<br>
+        
+            * VPCフローログ: là tính năng cho phép ghi lại thông tin về lưu lượng IP đi vào và đi ra khỏi giao diện mạng trong VPC. có thể lấy nhật ký lưu lượng mạng giữa các phiên bản EC2 bằng cách bật nhật ký lưu lượng trên giao diện mạng của các phiên bản EC2. tính năng này cho phép phân tích các sự cố mạng giữa các phiên bản ec2.<br>
+        
+            * amazon HealthLake là dịch vụ cung cấp cho các công ty chăm sóc sức khỏe và khoa học đời sống khả năng hiển thị toàn diện cũng như khả năng truy vấn và phân tích dữ liệu sức khỏe ở quy mô lớn cho từng cá nhân hoặc nhóm bệnh nhân. <br>
+        
+            * Health Dashboard là bảng thông tin cung cấp thông tin về tình trạng sức khỏe và các bất thường của tài nguyên aws. cung cấp cảnh báo và hướng dẫn về các sự kiện aws có thể ảnh hưởng đến môi trường aws. sẽ được thông báo chủ động để bất kỳ thay đổi nào có thể ảnh hướng đến môi trường aws。RSSフィードの設定もある<br>
+
+            * Cluster Placement Group (クラスタープレイスメントグループ) là một nhóm EC2 được đặt gần nhau trong cùng một Availability Zone (AZ) để đạt được hiệu suất mạng tối ưu và độ trễ thấp( Cluster Placement Group giúp hiệu suất cao, độ trễ thấp, nhưng chỉ trong 1 AZ).<br>
+
+            * Nếu muốn EC2 hoạt động trên nhiều AZ hoặc nhiều Region, cần sử dụng Spread Placement Group hoặc Partition Placement Group<br>
+
+            * Amazon FSx for lustre:  có thể đạt được thông lượng tới terabyte mỗi giây. FSx for lustre là hệ thống tệp được hỗ trợ bởi Lustre, một hệ thống tệp hiệu suất cao. Nó cung cấp khả năng lưu trữ tệp được chia sẻ với độ trễ dưới mili giây, thông lượng lên tới terabyte mỗi giây và hàng triệu IOPS. có thể truy cập và xử lý dữ liệu từ cả hệ thống tệp hiệu suất cao và API S3 cùng lúc.<br>
+
+            * パワーユーザーはIAM管理以外の全てのAWSサービスへのフルアクセス権限を有している<br>
+
+            * Bằng cách thiết lập thiết bị Snowball Edge Compute Optimized trong môi trường cục bộ của mình, bạn có thể sử dụng tùy chọn GPU để chạy phân tích máy học nâng cao trong môi trường nhà máy(機械学習) của mình. Snowball Edge Compute Optimized là một ứng dụng dành cho máy học phân tích dữ liệu, xử lý và lưu trữ cục bộ. Tính năng này cho phép bạn chạy các chức năng tính toán và lưu trữ của aws như EC2, EBS, S3, IoT Greengrass, lambda và iam tại 機械学習 hoặc địa điểm khác.<br>
+
+            * IoT Greengrass là phần mềm mở rộng chức năng của đám mây aws sang các thiết bị cục bộ. Điều này cho phép các thiết bị thu thập và phân tích dữ liệu gần nguồn hơn, phản ứng tự động với các sư kiện cục bộ và giao tiếp an toàn với nhau trong mạng cục bộ.<br>
+
+            * Khi kết nối và tích hợp các ứng dụng của bên thứ ba với tài nguyên aws trong tài khoản của bạn , bạn càn sử dụng aws iam identity center để kiếm soát quyền truy cập.<br>
+
+            * Amazon Kendra:là dịch vụ tìm kiếm doanh nghiêp được hỗ trợ bởi công nghệ máy học. Bạn có thể sử dụng amazon kendra để tạo giải pháp phân tích các đối tượng trong s3 bucket của mình bằng cách chạy các hàm tìm kiếm bằng ngôn ngữ lập trình cụ thể trực tiếp trên các đối tượng<br>
+
+            * AWS Support: cung cấp các biện pháp tốt nhất để triển khai và quản lý ứng dụng trên aws. aws support là dịch vụ hỗ trợ cơ bản mà bạn phải sử dụng khi đăng ký tài khoản aws. aws basic support đươc cung cấp miễn phí và bao gồm trung tâm tài nguyên, bảng điều khiển tình trạng dịch vụ.<br>
+
+            * 有料の「Developer」、「Business」、「Enterprise On-Ramp」または「Enterprise」レベルに加入することで、より高レベルなサポートを受けることができます。具体的には以下のようなサポートが提供されています：<br>
+            ・AWS のサービスや機能の利用方法に関する質問<br>
+            ・クラウドでアプリケーションを統合、デプロイ、そして管理するためのベストプラクティスの提供<br>
+            ・APIとAWS SDK の問題のトラブルシューティング<br>
+            ・AWS のリソースに関する操作または体系の問題のトラブルシューティング<br>
+            ・AWSマネジメントコンソールや他の AWS ツールの問題へのアドバイス<br>
+            ・健全性チェックで検出された問題へのアドバイス<br>
+            ・多数のサードパーティ製アプリケーション (例: OS、ウェブサーバー、E メール、データベース、ストレージ構成)の利用方法のアドバイス<br>
+            * AWS サポートには以下のサポートは含まれません：<br>
+            ・コードの開発<br>
+            ・カスタムソフトウェアのデバッグ<br>
+            ・システム管理タスクの実行<br>
+
+            * AWS managed services (ams): là dịch vụ ủy quyền quản lý hoạt động tài nguyên aws mà người dùng phải chịu trách nhiệm cho aws. aws cung cấp dịch vụ giám sát, phát hieenjj và quản lý sự cố, bảo mật, bản vá, sao lưu, tối ưu hóa chi phí v.v Cuối cùng, họ sẽ triển khai các hoạt động theo đúng các thông lệ tốt nhất của aws, nhưng không hỗ trợ các thông lệ tốt nhất khi sử dụng aws<br>
+
+
+
+        
         </p>
     </div>
     
