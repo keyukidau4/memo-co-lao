@@ -37,7 +37,7 @@
             
             ■サステイナビリティ（2021年より追加）<br>
             
-            * AWS WAF はWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません。Bằng cách liên kết với CloudFront, bạn có thể hạn chế quyền truy cập vào ứng dụng web của mình từ các địa chỉ IP cụ thể.<br>
+            * AWS WAF は基礎となるサービスに対し、定義したアクションに基づいてリクエストのブロックまたは許可のいずれかを指示しますWEBアプリケーションを、アプリケーションの可用性、セキュリティの侵害、リソースの過剰な消費などのウェブ攻撃から保護するウェブアプリケーションファイアウォールを提供するサービスです。アプリケーションに対する脅威検出を自動化することはできません。Bằng cách liên kết với CloudFront, bạn có thể hạn chế quyền truy cập vào ứng dụng web của mình từ các địa chỉ IP cụ thể.<br>
             
             * Amazon Detective: Amazon Detectiveにより、AWS上にホストされたアプリケーションに対する脅威検出を自動化することができます。Amazon DetectiveはCloudTrail、VPC Flow Logs、GuardDutyのログや結果を自動的に収集し、潜在的なセキュリティの問題を調査・分析することができます<br>
             
@@ -48,9 +48,9 @@
             * AWS Cloud Development Kit (CDK): đẩy nhanh quá trình phát triển đám mây bằng cách mô hình hóa các ứng dụng bằng ngôn ngữ lập trình. phát triên ứng dụng hiệu quả hơn bằng cách sử dụng cdk làm khuôn khổ chính để xác định cơ sở hạ tầng đám mây dưới dạng mã. các ngôn ngữ được hỗ trợ bao gồm : <br>
             TypeScript , JavaScript , Python , Java , C# , Go<br>
             
-            * AWS X-Ray : sử dụng X-Ray để phân tích và gỡ lỗi các ứng dụng micro service, ví dụ như các ứng dụng được xây dựng bằng kiến trúc vi dịch vụ. X-ray giúp hiểu hiệu suất của ứng dụng và tài nguyên cơ bản như EC2, cho phép xác định và khắc phục nguyên nhân gốc rễ của các sự cố và lỗi về hiệu suất . cung cấp chế độ xem toàn điện về các yêu cầu khi đi qua ứng dụng.<br>
+            * AWS X-Ray : sử dụng X-Ray để phân tích và gỡ lỗi các ứng dụng micro service, ví dụ như các ứng dụng được xây dựng bằng kiến trúc vi dịch vụ. X-ray giúp hiểu hiệu suất của ứng dụng và tài nguyên cơ bản như EC2, cho phép xác định và khắc phục nguyên nhân gốc rễ của các sự cố và lỗi về hiệu suất . cung cấp chế độ xem toàn điện về các yêu cầu khi đi qua ứng dụng.Amazon CloudWatchはX-Rayと連携してアプリケーションの分析にも利用されます<br>
             
-            * System Manager: dịch vụ cung cấp khả năng hiển thị và kiểm soát cơ sơ hạ tầng aws của mình.<br>
+            * Systems Manager: dịch vụ cung cấp khả năng hiển thị và kiểm soát cơ sơ hạ tầng aws của mình.<br>
             
             * cost categories: phân loại chính xác thông tin chi phí và sử dụng theo nhóm, trung tâm chi phí, địa lý, ứng dụng hoặc cơ cấu tổ chức khác và nhu cầu phân bố chi phí<br>
             
@@ -166,8 +166,113 @@
 
             * AWS managed services (ams): là dịch vụ ủy quyền quản lý hoạt động tài nguyên aws mà người dùng phải chịu trách nhiệm cho aws. aws cung cấp dịch vụ giám sát, phát hieenjj và quản lý sự cố, bảo mật, bản vá, sao lưu, tối ưu hóa chi phí v.v Cuối cùng, họ sẽ triển khai các hoạt động theo đúng các thông lệ tốt nhất của aws, nhưng không hỗ trợ các thông lệ tốt nhất khi sử dụng aws<br>
 
+            * Aws EKS Anywhere: là tùy chọn triển khai cho amazon eks cho phép bạn tạo và vận hành cụm kubernetes trong cơ sở hạ tầng do bạn quản lý. khách hàng có thể chạy amazon eks anywhere trên cơ sở hạ tầng tại chỗ của riêng họ bằng cách sử dụng vmware vSphere<br>
 
+            * Tính năng Session Manager của aws systems manager cho phép truy cập vào các phiên bản EC2, VM(máy ảo) và máy chủ ảo trong môi trường tại chỗ của bạn thông qua AWS CLI(giao diện dòng lệnh aws) hoặc shell dựa trên trình duyệt chỉ bằng một cú nhấp chuột.Session Manager cho phép mở cổng kết nối an toàn tới các phiên bản EC2 mà không cần phải mở cổng đến, duy trì máy chủ bastion hoặc quản lý khóa SSH.<br>
 
+            * Amazon transcribe: là dịch vụ phiên âm chuyển đổi giọng nói thành văn bản. Ngay cả âm thanh không rõ ràng, chẳng hạn như từ bản ghi âm điện thoại, cũng có thể được chuyển đổi thành dữ liệu văn bản. Tính năng này cho phép phiên âm các cuộc gọi đến trung tâm cuộc gọi.<br>
+
+            * Amazon Textract: là dịch vụ trích xuất văn bản tự động trích xuất văn bản và dữ liệu từ các tài nguyên PDF và OCR,<br>
+            
+            * EBSボリューム：Cơ bản chỉ có thể được đính kèm vào một phiên bản EC2 duy nhất. Provisioned IOPS có thể được đính kèm vào nhiều phiên bản EC2 bằng tính năng đính kèm nhiều, cho phép sử dụng để xử lý song song như dữ liệu lớn.<br>
+        
+            * S3 là dịch vụ lưu trữ mà nhiều người có thể truy cập qua internet. Đây là một bộ lưu trữ đối tượng có khả năng lưu trữ dữ liệu lớn, cho phép lưu trữ và truy xuất bất kỳ lượng dữ liệu nào. Có thể kết nối và sử dụng tính năng này từ nhiều phiên bản EC2, nhưng không được xử dụng làm nơi lưu trữ để xử lý dữ liệu mà phù hợp hơn để lưu trữ và chia sẻ hình ảnh, video, dữ liệu tài liệu v.v<br>
+        
+            * có thể sử dụng các tính năng của cost explorer để tối ưu hóa chi phí cho aws của mình. tính năng đề xuất điều chỉnh quy mô phù hợp giúp bạn xác định các cơ hội giảm chi phí bằng cách thu hẹp quy mô hoặc chấm dứt các phiên bản ec2. có thể nhận được các đê xuất về quy mô phù hợp bằng cách sủ dụng các chỉ số hiệu xuất KPI cấp cao nhất<br>
+        
+            * Amazon Macie: dịch vụ bảo mật sử dụng công nghệ máy học để tự động phát hiện, phân loại và bảo vệ dữ liệu được lưu trữ trong kho lưu trữ s3. bằng cách xác định dữ liệu nhạy cảm như thông tin nhận dạng cá nhân (PII) và sở hữu trí tuệ, cũng như phân tích các mẫu truy cập, có thể theo dõi dữ liệu để ngăn ngừa rò rỉ dữ liệu. macie cũng có thể bảo vệ dữ liệu nhạy cảm trong các kho lưu trữ dữ liệu khác chẳng hạn như RDS, bằng cách tạm thời di chuyển dữ liệu dó sang s3 bucketVí dụ: bạn có thể sử dụng Amazon Relational Database Service (RDS) hoặc ảnh chụp nhanh Amazon Aurora để xuất dữ liệu trong các dịch vụ đó sang Amazon S3, sau đó sử dụng Macie để đánh giá dữ liệu nhạy cảm<br>
+        
+            * AWS無料のセキュリティリソースには、AWSセキュリティブログ、証明可能安全性: リサーチとインサイト（動画コンテンツ）、ホワイトペーパー、高度なイノベーション、開発者向けドキュメント、記事とチュートリアル、トレーニング、セキュリティ速報、コンプライアンスのリソース、ユーザーの声が含まれます<br>
+        
+            * 継承される統制<br>
+                継承される統制 とはユーザーが AWS から完全に継承する統制です。物理統制と環境統制に分かれます。<br>
+                ・物理的統制とはデータセンターなどの物理施設や機器に関する統制管理のことです。<br>
+                ・環境統制はインフラ環境などの環境自体に関する統制管理のことです<br>
+        
+            * AWS RAM(aws resource access manager): dịch vụ cho phép chia sẻ an toàn các tài nguyên aws giữa các tài khoản aws, tổ chức và đơn vị tổ chức(OU) trong aws organizations. Tài nguyên được tạo ra và quản lý bởi aws ram có thể được chia sẻ trên nhiều tài khoản aws.<br>
+        
+            * プロビジョンドIOPS：là ổ SSD có hiệu suất cực cao được thiết kế cho khối lượng công việc giao dịch nhạy cảm với độ trễ. Đắt nhưng mang lại hiệu suất tốt nhất. Do đó, để đạt được hiệu suất I/0 cao hãy chọn Provisioned IOPS cho ổ đĩa EBS.<br>
+
+            * Ổ cứng HDD được tối ưu hóa thông lượng(スループット最適化HDD)：là ổ cứng HDD giá rẻ dành cho các khối lượng công việc thường xuyên truy cập, đòi hỏi thông lượng cao và cũng cung cấp hiệu suất thông lượng cao với chi phí thấp hơn so với ổ SSD IOPS được cung cấp. Chọn nếu muốn hiệu suất chi phí tốt nhất.<br>
+            
+            * SSD đa năng(汎用SSD)：là ổ SSD đa năng cân bằng giữa giá cả và hiệu suất cho nhiều khối lượng công việc giao dịch khác nhau.<br>
+            
+            * EBS Cold HDD(EBSコールドHDD)：là ổ cứng có chi phí cực kỳ thấp được thiết kế cho khối lượng công việc ít truy cập.<br>
+        
+            * 専用ホスト（Dedicated hót）: là máy chủ chiếm một máy chủ vậy lý. Máy chủ chuyên dụng cho phép bạn sử dụng giấy phép phần mềm hiện có theo từng socket, từng lõi hoặc từng máy ảo, tùy thuộc vào các điều khoản cấp phép của bạn. Hơn nữa, bạn không chia sẻ máy chủ vật lý với người dùng IAM khác, ngay cả khi cùng sở hữu một tài khoản aws.<br>
+        
+            * AWS IoT Core: là dịch vụ đám mây được quản lý giúp các thiết bị được kết nối tương tác dễ dàng và an toàn với các ứng dụng đám may và thiết bị khác. AWS IoT Core hỗ trợ hàng tỷ thiết bị và hàng nghìn tỷ tin nhắn, xử lý và định tuyến các tin nhắn đó đến các điểm cuối aws và các thiết bị khác một cách đáng tin cậy và an toàn. Với aws IoT core, các ứng dụng của bạn có thể theo dõi và liên lạc với tất cả các thiết bị của bạn mọi lúc ngay cả khi chúng không được kết nối với internet. Hoạt động với các dịch vụ của amazon như: Aws Lambda, amazon kinesis, amazon s3, amazon sageMaker, amazon dynamodb, amazon cloudwatch, aws cloudtrail, amazon quicksight và alexa voice service để cho phép xay dựng các ứng dụng IoT có khả năng thu thập , xử lý, phân tích và thực hiện hành động dựa trên dữ liệu do các thiết bị kết nối tạo ra.<br>
+
+            * ベタメタルインスタンス: có quyền truy cập trực tiếp vào bộ xử lý và tài nguyên bộ nhớ của máy chủ cơ sở. Các phiên bản này cho phép EC2 chạy các ứng dụng tận dụng các công cụ phân tích hiệu suất chuyên sâu, khối lượng công việc chuyên biệt yêu cầu truy cập trực tiếp vào cơ sở hạ tầng kim loại trần.<br>
+
+            ■7つの設計原則<br>
+                強固な認証基盤の整備<br>
+                追跡可能性の実現<br>
+                全レイヤーへのセキュリティ適用<br>
+                セキュリティのベストプラクティス自動化<br>
+                転送中および保管中のデータの保護<br>
+                データに人の手を入れない<br>
+                セキュリティイベントに対する準備<br>
+
+            ■6つのベストプラクティス<br>
+                Identity and Access Management<br>
+                アイデンティティとアクセス管理<br>
+                発見的統制<br>
+                インフラストラクチャ保護<br>
+                DDos攻撃を緩データ保護<br>
+                インシデント対応<br>
+
+            * AWS service catalog: cho phép tạo và quản lý danh mục các dịch vụ CNTT được chấp thuận sử dụng trên aws. Các dịch vụ CNTT này bao gồm mọi thứ từ hình ảnh máy ảo, máy chủ, phần mềm và cơ sở dữ liệu cho đến kiến trúc ứng dụng đa tầng toàn diện. aws service catalog thường được sử dụng để quản lý tập trung các dịch vụ cntt đã triên khai nhằm cho phép quản trị nhất quán và đáp ứng yêu cầu tuân thủ. Những lợi ích: <br>
+                - Quản lý tập trung vòng đời dịch vụ cntt(IT サービスライフサイクルを集中管理)<br>
+                - Đảm bảo tuân thủ các tiêu chuẩn của công ty(企業標準へのコンプライアンスを確保)<br>
+                - Nhân viên có thể nhanh chóng tìm kiếm và triển khai các dịch vụ cntt đã được phê duyệt(従業員は承認済みの IT サービスをすばやく見つけてデプロイ可能)<br>
+                - kết nối phần mềm IT service management(ITサービスマネジメント (ITSM) /ITOM ソフトウェアに接続)<br>
+
+            * aws パートナーネットワーク：Bằng cách sử dụng mạng lưới đối tác aws để lựa chọn công ty tư vấn bên thứ 3 phù hợp nhất, người dùng có thể nhận được sự hỗ trợ phù hợp cho nỗ lực di chuyển lên aws của mình. Mạng lưới đối tác aws là cộng đồng đối tác toàn cầu cung cấp các chương trình và tài nguyên để xây dựng, tiếp thị và bán các dịch vụ cho người dùng aws. <br>
+
+            * kinesis agent: là một ứng dụng phần mềm java độc lập cung cấp giải pháp dễ dàng để thu thập dữ liêu và gửi dữ liệu đó đến kinesis data streams. <br>
+
+            * amazon kinesis data firehouse: thu thập, chuyển đổi hoặc tải dữ liêu phát trực tuyến vào các dịch vụ hạ nguồn(vd: kinesis data analytics hoặc s3). bạn có thể tạo các hàm lambda để yêu cầu xử lý dữ liệu tùy chỉnh bổ sung trước khi dữ liệu được gửi xuống hạ nguôn.<br>
+
+            * amazon managed service for apache flink: là dịch vụ sử dụng apache flink để phân tích dữ liệu phát trực tuyến theo thời gian thực. được sử dụng để phân tích dữ liệu trực tuyến streaming.<br>
+
+            * apn consulting partners: là các công ty dịch vụ chuyên nghệp giúp khách hàng ở mọi quy mô thiết kế, phát triển, xây dựng, di chuyển và quản lý khối lượng công việc và ứng dụng trên aws. Các đối tác tư vấn bao gồm các nhà tích hợp hệ thống(SI), các công ty tư vấn chiến lược cơ quan, các nhà cung cấp dịch vụ được quản lý và các nhà bán lẻ giá trị<br>
+
+            * aws secrets manager: cung cấp cơ chế lưu trữ và truy xuất thông tin xác thực cho cơ sở dữ liệu và các dịch vụ khác một cách an toàn dưới dạng bí mật. secrets manager cho phép bạn truy xuất bí mật theo chương trình bằng cách thay thế thông tin đăng nhập được mã hóa cứng(bao gồm cả mật khẩu) trong mã của bạn bằng các lệnh gọi api tới secrets manager. secrets manager cho phép cấu hình tính năng tự động luân chuyển các secret của mình.<br> 
+
+            *Well-Architected Frameworkの3つの構成要素:<br>
+                ・Well-Architected Frameworkホワイトペーパー<br>
+                ・AWSのSAなどのパートナーによる支援制度<br>
+                ・Well-Architected Tool<br>
+
+            * aws workspaces: để sử dụng môi trường làm việc từ xa bằng máy trạm trên nền tảng đám mây aws từ PC ngoài hoặc thiết bị khác, bạn cần thiết lập môi trường máy tính để bàn ảo amazon workspaces. amazon workspaces là dich vụ VDI(máy tính để bàn ảo) được quản lý hoàn toàn dành cho windows và linux. có thể truy cập theo yêu cầu từ mọi thiết bị. có thể kết nối với workspaces đã tạo bằng ứng dụng khách hoặc trình duyệt web.<br>
+
+            * Well-Architected Frameworkの信頼性の原則<br>
+                ・インフラストラクチャサービスの障害復旧の自動化など軽減設計<br>
+                ・復旧手順のテストによる検証<br>
+                ・需要変化に応じた水平方向へのスケーラビリティによる高可用性の確保<br>
+                ・キャパシティの推測をやめる<br>
+                ・モニタリングと自動化を進める<br>
+
+            * amazon Quantum Ledger Database(amazon QLDB) là dịch vụ cơ sở dữ liệu sổ cái được quản lý hoàn toàn. Lịch sử thay đổi dữ liệu của bạn được giữ nguyên và có thể được xác minh bằng mật mã để đảm bảo tính hợp lệ. amazon QLDB cho phép bạn tạo hồ sơ đầy đủ và chính xác về mọi giao dịch tài chính, bao gồm cả giao dịch tín dụng.<br>
+        
+            * ルートユーザーのみが実施できるのは以下のタスクです<br>
+                ■アカウントの設定を変更します<br>
+                ■IAM ユーザーアクセス許可を更新します<br>
+                ■請求情報とコスト管理コンソールへの IAM アクセスをアクティブにする<br>
+                ■特定の税金請求書を表示します<br>
+                ■AWS アカウント を閉じます。<br>
+                ■リザーブドインスタンスマーケットプレイスに出品者として登録します<br>
+                ■MFA (多要素認証)に対応するように Amazon S3 バケットを設定します<br>
+                ■無効な仮想プライベートクラウド (VPC) ID または VPC エンドポイント ID が含まれている Amazon Simple Storage Service (Amazon S3) バケットポリシーを編集または削除します。<br>
+                ■GovCloudにサインアップする。<br>
+        
+        
+        
+        
+        
+        
+        
         
         </p>
     </div>
