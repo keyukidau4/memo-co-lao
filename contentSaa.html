@@ -1,0 +1,44 @@
+AWS Well-Architected Framework:
+Cung cấp các nguyên tắc thiết kế chung và sáu trụ cột (Độ tin cậy, Bảo mật, Hiệu quả hiệu suất, Tối ưu hóa chi phí, Vận hành xuất sắc và Tính bền vững) để thiết kế hệ thống tối ưu trên AWS.
+Các dịch vụ giám sát và thông báo:
+Amazon CloudWatch: Giám sát các dịch vụ AWS và hệ thống tại chỗ, cho phép hành động dựa trên trạng thái tài nguyên (ví dụ: sử dụng CPU).
+Amazon SNS (Simple Notification Service): Dịch vụ nhắn tin được quản lý hoàn toàn để gửi thông báo và dữ liệu đến nhiều ứng dụng và người dùng thông qua các kênh khác nhau (ví dụ: email, SMS, Lambda).
+Lợi ích của việc sử dụng dịch vụ đám mây:
+Giảm chi phí trả trước: Thanh toán khi bạn sử dụng (mô hình trả tiền khi sử dụng).
+Lợi thế về chi phí: Tiết kiệm chi phí do quy mô kinh tế.
+Khả năng thích ứng với sự thay đổi nhu cầu: Dễ dàng mở rộng quy mô lên/xuống để đáp ứng nhu cầu thay đổi.
+Tăng tốc độ triển khai: Nhanh chóng cung cấp các môi trường để phát triển và thử nghiệm.
+Giảm chi phí vận hành và bảo trì: Không cần quản lý phần cứng.
+Toàn cầu hóa: Dễ dàng triển khai trên toàn thế giới với độ trễ thấp.
+Bảo mật và bảo vệ dữ liệu:
+MFA Delete: Yêu cầu xác thực đa yếu tố (MFA) để xóa các đối tượng được quản lý bằng tính năng kiểm soát phiên bản của S3, ngăn ngừa việc xóa do vô tình hoặc trái phép.
+Service Control Policies (SCP): Giới hạn quyền truy cập vào các dịch vụ AWS và tài nguyên cho các đơn vị tổ chức (OU) hoặc tài khoản AWS.
+Object Lock: Ngăn chặn việc cập nhật hoặc xóa các đối tượng trong S3, với chế độ tuân thủ đảm bảo rằng các đối tượng vẫn chỉ đọc trong một khoảng thời gian được chỉ định, ngay cả đối với người dùng root.
+Amazon RDS Delete Protection: Ngăn chặn việc xóa cơ sở dữ liệu Amazon RDS và cụm cơ sở dữ liệu Amazon Aurora.
+AWS CloudHSM: Tạo và quản lý các khóa mã hóa bằng các thiết bị phần cứng chuyên dụng.
+Mạng:
+Public Subnets: Các subnet có định tuyến đến Internet Gateway, cho phép kết nối từ Internet và từ subnet.
+NAT Gateway: Cho phép các subnet riêng tư giao tiếp với Internet.
+VPC Endpoints: Cho phép các tài nguyên trong VPC truy cập các dịch vụ AWS bên ngoài VPC qua mạng riêng.
+VPC Peering: Cho phép định tuyến giữa các VPC.
+VPC Flow Logs: Ghi lại thông tin lưu lượng mạng chảy qua các giao diện mạng đàn hồi (ENI) trong VPC, giúp phát hiện lưu lượng đáng ngờ.
+Phân phối nội dung:
+Amazon CloudFront: Mạng phân phối nội dung (CDN) an toàn và nhanh chóng, phân phối nội dung từ các vị trí biên trên toàn thế giới.
+DNS (Route 53):
+Alias Records: Cho phép ánh xạ tên miền đến các tài nguyên AWS, bao gồm cả Zone Apex.
+AAAA Records: Ánh xạ tên miền đến địa chỉ IPv6.
+NS Records: Chỉ định máy chủ DNS quản lý thông tin vùng cho một miền.
+MX Records: Chỉ định máy chủ thư để phân phối email cho một miền.
+Cơ sở dữ liệu:
+Amazon RDS Encryption: Mã hóa các phiên bản cơ sở dữ liệu, bản sao lưu, ảnh chụp nhanh, nhật ký và bản sao đọc (RR).
+Amazon RDS Read Replicas (RR): Cho phép mở rộng quy mô các cơ sở dữ liệu chỉ đọc để giảm tải cho cơ sở dữ liệu chính.
+Amazon DynamoDB Capacity Units: Quản lý thông lượng đọc và ghi cho các bảng DynamoDB.
+Tính toán:
+Lambda VPC Access: Cho phép các hàm Lambda truy cập các tài nguyên AWS trong các subnet riêng tư.
+Auto Scaling: Tự động điều chỉnh dung lượng tài nguyên dựa trên tải hoặc lịch trình.
+Lưu trữ:
+AWS Storage Gateway: Cho phép truy cập nhanh chóng và an toàn từ tại chỗ đến các dịch vụ lưu trữ AWS.
+Dữ liệu phát trực tuyến:
+Amazon Kinesis: Thu thập và xử lý dữ liệu phát trực tuyến trong thời gian thực.
+Giám sát nâng cao:
+CloudWatch Composite Alarms: Tạo báo động thông báo khi nhiều số liệu vượt quá ngưỡng.
